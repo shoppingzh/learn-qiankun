@@ -2,16 +2,21 @@ import { createApp } from 'vue'
 import App from './App.vue'
 import { registerMicroApps, start } from 'qiankun'
 import router from './router'
+import './style.scss'
 
 createApp(App)
   .use(router)
   .mount('#app')
 
-registerMicroApps([{
-  name: 'sub-app1',
-  entry: '//localhost:5174',
-  container: '#app',
-  activeRule: '/app1'
-}])
+// registerMicroApps([{
+//   name: 'sub-app1',
+//   entry: '//localhost:5174',
+//   container: '#app',
+//   activeRule: '/app1'
+// }])
 
-start()
+// start({
+//   sandbox: {
+//     strictStyleIsolation: true
+//   }
+// })

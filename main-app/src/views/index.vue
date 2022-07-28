@@ -1,5 +1,6 @@
 <template>
   <div class="bg-dark">
-    sub app1: hello
+    首页
   </div>
+  
 </template>
