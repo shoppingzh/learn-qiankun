@@ -5,3 +5,7 @@
 .bg-dark {
   background-color: #000;
 }
+
+html, body, #app {
+  @apply h-full;
+}

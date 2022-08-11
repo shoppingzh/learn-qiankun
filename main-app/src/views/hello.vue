@@ -1,3 +1,3 @@
 <template>
-  hello
+  app1
 </template>

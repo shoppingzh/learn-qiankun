@@ -1,5 +1,5 @@
 import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router'
-import Layout from '@/views/layout.vue'
+import Layout from '@/layout/index.vue'
 
 const routes: RouteRecordRaw[] = [{
   path: '/',
@@ -14,7 +14,14 @@ const routes: RouteRecordRaw[] = [{
 }/*, {
   path: '/:pathMatch(.*)*',
   component: import('@/views/404.vue')
-}*/]
+}*/, {
+  path: '/app1',
+  component: Layout,
+  children: [{
+    path: ':pathMatch(.*)*',
+    component: import('@/views/app1.vue')
+  }]
+}]
 
 export default createRouter({
   history: createWebHistory('/'),

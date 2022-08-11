@@ -6,7 +6,7 @@ import router from './router'
 function render(container?: HTMLElement) {
   createApp(App)
     .use(router)
-    .mount(container ? container.querySelector('#subapp') : '#app')
+    .mount(container ? container.querySelector('#app') : '#app')
 }
 
 if (!qiankunWindow.__POWERED_BY_QIANKUN__) {
